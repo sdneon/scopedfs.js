@@ -78,6 +78,13 @@ An instance of ScopedFS is returned by `require('scopedfs')`, and also by `scope
     where `affixes` is either a prefix string (like `"myapp-"`) or an object like `{ prefix: "d-", suffix: ".app" }`.
 
 
+## Mod
+
+Enhanced by [sdneon](https://github.com/sdneon) to incorporate [fileutils](https://github.com/lukebayes/node-fileutils)' methods: `eachFileOrDirectory`, `eachFile`, `eachDirectory`, `eachFileMatching`, `eachFileMatchingSorted` and `readEachFileMatching`.
+
+ * Known issue: the above methods return the real full paths and not scoped paths.
+
+
 ## License
 
 MIT. © 2012, Andrey Tarantsov.
